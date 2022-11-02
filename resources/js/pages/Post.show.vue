@@ -1,11 +1,11 @@
 <template>
   <div>
     <section>
-        <div class="container m-2">
-            <h1 class="font-semibold">
+        <div class="container mx-auto m-2">
+            <h1 class="text-center font-bold text-4xl">
                 Pagina di dettaglio del post
             </h1>
-            <p>{{ slug }}</p>
+            <p><strong>Slug: </strong>{{ slug }}</p>
         </div>
     </section>
   </div>

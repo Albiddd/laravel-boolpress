@@ -2411,10 +2411,10 @@ var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", [_c("section", [_c("div", {
-    staticClass: "container m-2"
+    staticClass: "container mx-auto m-2"
   }, [_c("h1", {
-    staticClass: "font-semibold"
-  }, [_vm._v("\n              Pagina di dettaglio del post\n          ")]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.slug))])])])]);
+    staticClass: "text-center font-bold text-4xl"
+  }, [_vm._v("\n              Pagina di dettaglio del post\n          ")]), _vm._v(" "), _c("p", [_c("strong", [_vm._v("Slug: ")]), _vm._v(_vm._s(_vm.slug))])])])]);
 };
 var staticRenderFns = [];
 render._withStripped = true;
@@ -18699,7 +18699,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\BooleanDevelopement\laravel-api\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! C:\BooleanDevelopement\laravel-boolpress\resources\js\front.js */"./resources/js/front.js");
 
 
 /***/ })
