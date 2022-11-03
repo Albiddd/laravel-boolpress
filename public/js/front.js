@@ -2340,7 +2340,7 @@ var render = function render() {
     }, [_vm._v(_vm._s(error))]);
   }), 0) : _vm._e()]), _vm._v(" "), _c("input", {
     "class": {
-      "col-span-2 cursor-pointer w-full bg-indigo-400 hover:bg-indigo-600 px-4 py-2 uppercase rounded-lg text-[#FFF] font-semibold": true,
+      "col-span-2 cursor-pointer w-full bg-indigo-500 hover:bg-indigo-600 px-4 py-2 uppercase rounded-lg text-[#FFF] font-semibold": true,
       "opacity-30 pointer-events-none": !_vm.isValid,
       "animate-pulse": _vm.sending
     },

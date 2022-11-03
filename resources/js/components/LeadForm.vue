@@ -38,7 +38,7 @@
             </p> 
 
             <input :class="{
-            'col-span-2 cursor-pointer w-full bg-indigo-400 hover:bg-indigo-600 px-4 py-2 uppercase rounded-lg text-[#FFF] font-semibold': true,
+            'col-span-2 cursor-pointer w-full bg-indigo-500 hover:bg-indigo-600 px-4 py-2 uppercase rounded-lg text-[#FFF] font-semibold': true,
             'opacity-30 pointer-events-none': !isValid,
             'animate-pulse': sending
             }" type="submit" :value="sending? 'waiting' : 'invia'">
