@@ -2,9 +2,10 @@
   <div>
     <section>
         <div class="container mx-auto m-2">
-            <h1 class="text-center font-bold text-4xl">
+            <h1 class="text-center font-bold text-4xl py-2">
                 Pagina di dettaglio del post
             </h1>
+            <img v-if="post.cover_path" h-full w-full object-fit object-center :src="post.cover_path" alt="">
             <h3 class="font-bold my-2">{{ post.title }}</h3>
             <div v-if="post.category" class="category">
                 {{ post.category.name }}
@@ -30,7 +31,7 @@ export default {
     props: ['slug'],
     data(){
         return{
-            post: {},
+            post: null,
             link:
             {
                 text: 'Blog',
@@ -43,10 +44,12 @@ export default {
         fetchPost(){
             // const slug = this.$route.params.slug
             axios.get(`/api/posts/${this.slug}`).then(res => {
-                console.log(res.data);
-                this.post = res.data;
+                // console.log(res.data);
+                const {post} = res.data;
+                this.post = post;
             }).catch(err => {
-                console.log(err);
+                // console.log(err);
+                this.$router.replace({name: '404'})
             })
         }    
     },

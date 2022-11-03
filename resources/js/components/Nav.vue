@@ -6,7 +6,8 @@
                     LOGO
                 </div>
                 <ul class="flex items-center">
-                    <li class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6" v-for="(link, i) in navLinks" :key="i">
+                    <li class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6" 
+                    v-for="(link, i) in navLinks" :key="i">
                         <router-link :to="{ name: link.name}">{{link.text}}</router-link>
                     </li>
                 </ul>

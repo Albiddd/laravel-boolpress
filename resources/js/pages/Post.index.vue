@@ -64,7 +64,7 @@
                   page: page
                 }
               }).then((res) => {  
-              console.log(res.data);
+              // console.log(res.data);
               const { data, current_page, last_page, total } = res.data.result
               this.posts = data
               this.lastPage = last_page
